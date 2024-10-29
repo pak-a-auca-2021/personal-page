@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(https://cdn.imgchest.com/files/k739c6daz7q.png);
+    background-repeat: no-repeat;
+    max-width: 1143px;
+    min-height: 1583px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
+}
+.container > * {
+    border: 2px dashed blue;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 38px 104px 96px 310px 44px 315px;
+    grid-template-columns: minmax(225px, auto) minmax(657px, auto) minmax(360px, auto);
+    grid-template-areas:
+        "one one seven"
+        "two eight nine"
+        "three three three"
+        "four four four"
+        "five five five"
+        "six six six";
+}
+
+.box1 { grid-area: one; }
+.box2 { grid-area: two; }
+.box3 { grid-area: three; }
+.box4 { grid-area: four; }
+.box5 { grid-area: five; }
+.box6 { grid-area: six; }
+.box7 { grid-area: seven; }
+.box8 { grid-area: eight; }
+.box9 { grid-area: nine; }
+
+ul {
+    font-family: 'Arial', sans-serif; 
+    font-size: 14px;
+    font-weight: bold;
+
+    list-style-type: none;
+    padding: 21px;
+    padding-top: 15px;
+
+    margin: 0;
+    display: flex;
+
+    background-color: #ffffff;
+    color: #000000;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    align-items: center;
+}
+
+.about-company {
+    flex-basis: 163px;
+    padding-left: 5px;
+}
+.contacts {
+    flex-basis: 111px;
+}
+.payment {
+    flex-basis: 109px;
+}
+.delivery {
+    flex-basis: 105px;
+}
+.orgs {
+    flex-basis: 182px;
+}
+.goods {
+    flex-basis: 8px;
+}
+.num {
+    flex-basis: 10px;
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+
+        grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six";
+    }
+}
