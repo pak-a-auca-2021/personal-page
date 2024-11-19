@@ -8,12 +8,12 @@ img:nth-of-type(1) {
 }
    
 body {
-    background-image: none;
+    background-image: url(https://cdn.imgchest.com/files/k739c6daz7q.png);
     background-repeat: no-repeat;
     max-width: 1143px;
     min-height: 1583px;
     font-size: 2rem;
-    opacity: 1;
+    opacity: .5;
     color: blue;
 }
 
@@ -23,8 +23,8 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 38px 104px 96px 310px 44px 315px;
-    grid-template-columns: minmax(225px, auto) minmax(657px, auto) minmax(360px, auto);
+    grid-template-rows: minmax(37px, auto) minmax(104px, auto) minmax(96px, auto) minmax(310px, auto) minmax(44px, auto) minmax(315px, auto);
+    grid-template-columns:  minmax(225px, 1fr) minmax(657px, 2fr) minmax(360px, 1fr);
     grid-template-areas:
         "one one seven"
         "two eight nine"
@@ -48,44 +48,25 @@ ul {
     font-family: 'Arial', sans-serif; 
     font-size: 14px;
     font-weight: bold;
-
     list-style-type: none;
-    padding: 21px;
-    padding-top: 15px;
-
+    padding: 5px;
+    padding-top: 10px;
     margin: 0;
     display: flex;
-
     background-color: #ffffff;
     color: #000000;
-
     max-width: 100%;
     max-height: 100%;
-
     align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
 }
 
-.about-company {
-    flex-basis: 163px;
-    padding-left: 5px;
-}
-.contacts {
-    flex-basis: 111px;
-}
-.payment {
-    flex-basis: 109px;
-}
-.delivery {
-    flex-basis: 105px;
-}
-.orgs {
-    flex-basis: 182px;
-}
-.goods {
-    flex-basis: 8px;
-}
-.num {
-    flex-basis: 10px;
+ul li {
+    padding: 15px;
+    border-bottom: 1px solid #000000;
+    width: 100%;
+    text-align: center;
 }
 
 

@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="grid3.css" class="style">   
 </head>
 <body>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+
     <img src='https://cdn.imgchest.com/files/pyvdcd2n9yk.png' style='position: absolute; top:0; left:0;z-index:-1'>
     <div class="container">
-        <div class="box1">
+        <div class="box1">1</div>
+        <div class="box2">
             <ul class =>
                 <li class="about-company">About company</li>
                 <li class="contacts">Contacts</li>
@@ -21,7 +24,6 @@
                 <li class="num">+1,000,000</li>
             </ul>
         </div>
-        <div class="box2">2</div>
         <div class="box3">3</div>
         <div class="box4">4</div>
         <div class="box5">5</div>
@@ -30,5 +32,16 @@
         <div class="box8">8</div>
         <div class="box9">9</div>
     </div>
+    <script>
+        function switchStyle() {
+            let style = document.querySelector('.style');
+            if (style.getAttribute('href') == 'grid3.css') {
+                style.setAttribute('href', 'grid2.css');
+            } else {
+            style.setAttribute('href', 'grid3.css');
+            }
+        }
+    </script>
+        
 </body>
 </html>
