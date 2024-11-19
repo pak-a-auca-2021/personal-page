@@ -2,6 +2,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     background-image: url(https://cdn.imgchest.com/files/k739c6daz7q.png);
     background-repeat: no-repeat;
@@ -11,14 +12,15 @@ body {
     opacity: .5;
     color: blue;
 }
+
 .container > * {
     border: 2px dashed blue;
 }
 
 .container {
     display: grid;
-    grid-template-rows: 38px 104px 96px 310px 44px 315px;
-    grid-template-columns: minmax(225px, auto) minmax(657px, auto) minmax(360px, auto);
+    grid-template-rows: minmax(37px, auto) minmax(104px, auto) minmax(96px, auto) minmax(310px, auto) minmax(44px, auto) minmax(315px, auto);
+    grid-template-columns:  minmax(225px, 1fr) minmax(657px, 2fr) minmax(360px, 1fr);
     grid-template-areas:
         "one one seven"
         "two eight nine"
@@ -42,22 +44,18 @@ ul {
     font-family: 'Arial', sans-serif; 
     font-size: 14px;
     font-weight: bold;
-
     list-style-type: none;
-    padding: 21px;
-    padding-top: 15px;
-
+    padding: 5px;
+    padding-top: 10px;
     margin: 0;
     display: flex;
-
     background-color: #ffffff;
     color: #000000;
-
     max-width: 100%;
     max-height: 100%;
-
     align-items: center;
 }
+
 
 .about-company {
     flex-basis: 163px;
