@@ -8,12 +8,12 @@ img:nth-of-type(1) {
 }
    
 body {
-    background-image: url(https://cdn.imgchest.com/files/k739c6daz7q.png);
+    background-image: none;
     background-repeat: no-repeat;
     max-width: 1143px;
     min-height: 1583px;
     font-size: 2rem;
-    opacity: .5;
+    opacity: 1;
     color: blue;
 }
 
@@ -49,21 +49,14 @@ ul {
     font-size: 14px;
     font-weight: bold;
     list-style-type: none;
-    padding: 5px;
-    padding-top: 10px;
-    margin: 0;
-    display: flex;
+    padding: 10px;
     background-color: #ffffff;
-    color: #000000;
-    max-width: 100%;
-    max-height: 100%;
-    align-items: center;
-    flex-direction: column;
+    color: #333333;
     text-transform: uppercase;
 }
 
 ul li {
-    padding: 15px;
+    padding: 10px 20px;
     border-bottom: 1px solid #000000;
     width: 100%;
     text-align: center;

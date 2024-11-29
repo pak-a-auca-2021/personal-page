@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(https://cdn.imgchest.com/files/k739c6daz7q.png);
+    background-image: none;
     background-repeat: no-repeat;
     max-width: 1143px;
     min-height: 1583px;
@@ -42,24 +42,27 @@ body {
 
 ul {
     font-family: 'Arial', sans-serif; 
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     list-style-type: none;
-    padding: 5px;
-    padding-top: 10px;
+    padding: 10px;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     background-color: #ffffff;
-    color: #000000;
-    max-width: 100%;
-    max-height: 100%;
-    align-items: center;
+    color: #333333;
+}
+
+ul li {
+    padding: 10px;
+    flex: 1 1 auto; 
+    text-align: center; 
+    border-bottom: 1px solid #cccccc; 
 }
 
 
 .about-company {
     flex-basis: 163px;
-    padding-left: 5px;
 }
 .contacts {
     flex-basis: 111px;
