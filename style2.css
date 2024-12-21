@@ -17,9 +17,9 @@ body {
     color: blue;
 }
 
-.container > * {
+/* .container > * {
     border: 2px dashed blue;
-}
+} */
 
 ul {
     font-family: 'Arial', sans-serif; 
@@ -52,7 +52,7 @@ ul li {
     background: none;
     border: none;
     cursor: pointer;
-    color: #003366; /* Blue color for the icon */
+    color: #003366; 
     position: fixed; /* Fixed at the top-right corner */
     top: 10px;
     right: 10px;
@@ -62,14 +62,14 @@ ul li {
 /* Box1 Menu Styling */
 .menu-items {
     display: none; /* Hidden by default */
-    background-color: #003366; /* Blue background for the menu */
+    background-color: #003366; 
     color: white;
     position: absolute; /* Positioned below the hamburger icon */
     top: 50px;
     right: 0;
     width: 200px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 999; /* Ensure it’s above other content */
 }
 
@@ -98,151 +98,151 @@ ul li {
 }
 /* BOX 2 */
 .logo-image {
-    max-width: 100%; /* Ensures the image scales proportionally */
-    height: auto;    /* Keeps the aspect ratio */
-    width: 225px;    /* You can adjust this value */
-    margin: 0 auto;  /* Center the image */
-    display: block;  /* Ensures proper centering */
+    max-width: 100%; 
+    height: auto;   
+    width: 225px;   
+    margin: 0 auto; 
+    display: block; 
 }
 
 /* Box3 Styling */
 .box3 {
-    display: flex; /* Enables horizontal layout */
-    flex-wrap: wrap; /* Allows elements to wrap on smaller screens */
-    gap: 20px; /* Space between sections */
-    justify-content: space-between; /* Space out the sections */
-    align-items: center; /* Align vertically */
-    padding: 10px 20px; /* Padding inside the box */
-    background-color: #eef2f7; /* Light gray background */
-    border: 1px solid #ddd; /* Optional: Border for separation */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px;
+    background-color: #eef2f7;
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 /* Catalog Section */
 .catalog {
-    display: flex; /* Align icon and text horizontally */
-    align-items: center; /* Center-align content vertically */
-    gap: 10px; /* Space between icon and text */
-    background-color: #003366; /* Blue background */
-    padding: 10px; /* Padding inside the section */
-    border-radius: 5px; /* Rounded corners */
-    color: white; /* White text */
+    display: flex; 
+    align-items: center; 
+    gap: 10px;
+    background-color: #003366; 
+    padding: 10px; 
+    border-radius: 5px; 
+    color: white;
     font-weight: bold;
 }
 
 .catalog-icon {
-    font-size: 20px; /* Icon size */
+    font-size: 20px; 
     color: white;
 }
 
 .catalog-text {
     color: white;
     font-weight: bold;
-    font-size: 14px; /* Adjust font size */
+    font-size: 14px;
 }
 
 /* Search Bar Section */
 .search-bar {
-    display: flex; /* Align search elements horizontally */
-    flex-wrap: wrap; /* Wrap items for smaller screens */
-    gap: 10px; /* Space between input, dropdown, and button */
-    flex-grow: 1; /* Ensure the search bar stretches */
-    margin: 0 20px; /* Adds space between the catalog and shopping cart */
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 10px; 
+    flex-grow: 1;
+    margin: 0 20px; 
 }
 
 .search-input {
-    flex-grow: 1; /* Input field takes the remaining space */
+    flex-grow: 1; 
     padding: 10px;
-    border: 1px solid #003366; /* Blue border */
-    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #003366;
+    border-radius: 5px;
     font-size: 14px;
 }
 
 .search-category {
     padding: 10px;
-    border: 1px solid #003366; /* Blue border */
-    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #003366; 
+    border-radius: 5px; 
     font-size: 14px;
-    background-color: #fff; /* White background */
+    background-color: #fff;
 }
 
 .search-button {
     padding: 10px 20px;
-    background-color: #003366; /* Blue background */
-    color: white; /* White text */
+    background-color: #003366; 
+    color: white;
     border: none;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px; 
     cursor: pointer;
     font-weight: bold;
     font-size: 14px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 /* Hover Effect for Search Button */
 .search-button:hover {
-    background-color: #0055a5; /* Darker blue */
+    background-color: #0055a5;
 }
 
 /* Shopping Cart Section */
 .shopping-cart {
-    display: flex; /* Align icon and details horizontally */
-    align-items: center; /* Center vertically */
-    gap: 10px; /* Space between icon and text */
-    background-color: #fff; /* White background */
-    padding: 10px; /* Padding inside the section */
-    border: 1px solid #003366; /* Blue border */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    background-color: #fff;
+    padding: 10px; 
+    border: 1px solid #003366;
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .cart-icon {
-    font-size: 25px; /* Icon size */
-    color: #003366; /* Blue color for the icon */
+    font-size: 25px; 
+    color: #003366; 
 }
 
 .cart-details {
     display: flex;
-    flex-direction: column; /* Stack title and quantity vertically */
-    align-items: flex-start; /* Align text to the left */
-    color: #003366; /* Blue text color */
+    flex-direction: column; 
+    align-items: flex-start; 
+    color: #003366; 
 }
 
 .cart-title {
-    font-size: 14px; /* Smaller font for the title */
+    font-size: 14px; 
     font-weight: bold;
-    border-bottom: 1px solid #003366; /* Underline effect */
+    border-bottom: 1px solid #003366;
 }
 
 .cart-quantity {
-    font-size: 12px; /* Smaller font for the quantity */
+    font-size: 12px; 
     font-weight: normal;
 }
 
 /* HERO BOX4 */
 .box4 {
-    display: flex; /* Enable flexbox for alignment */
-    justify-content: center; /* Horizontally center the image */
-    align-items: center; /* Vertically center the image */
-    padding: 10px; /* Optional: Add some padding inside the box */
-    background-color: #ffffff; /* Optional: Light background for better visibility */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding: 10px; 
+    background-color: #ffffff; 
 }
 
 .hero-image {
-    max-width: 100%; /* Ensures the image scales proportionally */
-    height: auto;    /* Keeps the aspect ratio */
+    max-width: 100%;
+    height: auto; 
     width: 100%;    
-    margin: 0 auto;  /* Center the image */
-    display: block;  /* Ensures proper centering */
+    margin: 0 auto; 
+    display: block; 
 }
 
 /* Box5 Styling */
 .box5 {
-    display: flex; /* Align tabs horizontally */
-    gap: 10px; /* Space between tabs */
-    padding: 10px; /* Inner padding */
-    background-color: #f9f9f9; /* Light gray background */
-    align-items: center; /* Center tabs vertically */
-    justify-content: center; /* Center tabs horizontally */
+    display: flex; 
+    gap: 10px; 
+    padding: 10px; 
+    background-color: #f9f9f9;
+    align-items: center;
+    justify-content: center;
 }
 
 /* General Tab Styling */
@@ -250,47 +250,47 @@ ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 20px; /* Space inside tabs */
+    padding: 10px 20px;
     font-family: Arial, sans-serif;
     font-size: 14px;
-    text-transform: uppercase; /* All caps for text */
+    text-transform: uppercase; 
     font-weight: bold;
-    position: relative; /* For pseudo-elements or positioning */
-    clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%); /* Angled effect */
-    background-color: #e5e5e5; /* Default background */
-    color: #003366; /* Default text color */
+    position: relative; 
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+    background-color: #e5e5e5; 
+    color: #003366; 
     cursor: pointer;
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    text-decoration: none; 
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Hover Effect for Tabs */
 .tab:hover {
-    background-color: #003366; /* Darker blue on hover */
-    color: white; /* White text on hover */
+    background-color: #003366; 
+    color: white; 
 }
 
 /* Active Tab Styling */
 .latest-orders {
-    background-color: #003366; /* Blue background for active tab */
-    color: white; /* White text for active tab */
+    background-color: #003366; 
+    color: white; 
 }
 
 /* Items on Sale Tab */
 .items-sale {
-    background-color: #e5e5e5; /* Gray background */
-    color: #003366; /* Blue text */
+    background-color: #e5e5e5; 
+    color: #003366; 
 }
 
 /* Link Styling for Items on Sale */
 .items-sale .tab-link {
-    text-decoration: none; /* Remove underline */
-    color: #003366; /* Blue text color */
-    font-weight: bold; /* Bold text */
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold; 
 }
 
 .items-sale .tab-link:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; 
 }
 
 
@@ -298,83 +298,83 @@ ul li {
 .box6 {
     display: flex;
     flex-wrap: wrap; /* Wrap product cards onto new rows if needed */
-    gap: 20px; /* Space between product cards */
-    justify-content: center; /* Center all content */
-    padding: 20px; /* Padding around the box */
-    background-color: #f9f9f9; /* Light gray background */
-    position: relative; /* For positioning arrows */
+    gap: 20px; 
+    justify-content: center; 
+    padding: 20px;
+    background-color: #f9f9f9; 
+    position: relative; 
 }
 
 /* Carousel Container Styling */
 .carousel {
-    display: flex; /* Horizontal layout for product cards */
-    flex-wrap: wrap; /* Allow wrapping onto multiple rows */
-    gap: 20px; /* Space between product cards */
-    justify-content: center; /* Center-align cards */
-    width: 100%; /* Occupy full width of the container */
-    margin: 0 auto; /* Center carousel content */
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center; 
+    width: 100%; 
+    margin: 0 auto; 
 }
 
 /* Product Card Styling */
 .product-card {
     display: flex;
-    flex-direction: column; /* Vertical layout for cards */
-    align-items: center; /* Center-align card content */
-    justify-content: space-between; /* Space out content vertically */
-    text-align: center; /* Center text */
-    border: 2px solid #003366; /* Blue border */
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between; 
+    text-align: center; 
+    border: 2px solid #003366;
     padding: 10px;
-    background-color: #fff; /* White background */
-    width: calc(100% / 2 - 30px); /* Two cards per row */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    border-radius: 5px; /* Rounded corners */
-    box-sizing: border-box; /* Include padding and border in size */
-    transition: transform 0.3s ease; /* Hover effect */
+    background-color: #fff; 
+    width: calc(100% / 2 - 30px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease; 
 }
 
 /* Hover Effect for Product Card */
 .product-card:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05);
 }
 
 /* Product Image Styling */
 .product-card img {
-    max-width: 100%; /* Fit within card width */
-    max-height: 120px; /* Consistent image height */
-    object-fit: contain; /* Prevent distortion */
-    margin-bottom: 10px; /* Space below image */
+    max-width: 100%; 
+    max-height: 120px; 
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
 /* Product Title Styling */
 .product-card h3 {
     font-family: Arial, sans-serif;
-    font-size: 14px; /* Adjusted font size */
-    color: #003366; /* Blue color for title */
+    font-size: 14px;
+    color: #003366;
     margin: 10px 0;
-    line-height: 1.4; /* Better readability */
-    overflow: hidden; /* Prevent overflow */
-    text-overflow: ellipsis; /* Ellipsis for long text */
+    line-height: 1.4;
+    overflow: hidden; 
+    text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
 
 /* Product Price Styling */
 .product-card p {
     font-family: Arial, sans-serif;
-    font-size: 16px; /* Larger font for price */
-    color: black; /* Black color for price */
+    font-size: 16px;
+    color: black;
     font-weight: bold;
-    margin-top: auto; /* Push price to bottom */
-    margin-bottom: 10px; /* Space below price */
+    margin-top: auto;
+    margin-bottom: 10px;
 }
 
 /* Navigation Arrows Styling */
 .carousel-btn {
-    background-color: #003366; /* Blue background */
-    color: white; /* White arrow color */
+    background-color: #003366; 
+    color: white; 
     border: none;
-    border-radius: 50%; /* Circular button */
+    border-radius: 50%;
     width: 40px;
     height: 40px;
     font-size: 20px;
@@ -382,86 +382,86 @@ ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
     position: absolute;
-    top: 50%; /* Vertically center */
-    transform: translateY(-50%); /* Adjust for button height */
-    z-index: 1000; /* Above other elements */
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 1000; 
 }
 
 /* Left Arrow Position */
 .left-btn {
-    left: 10px; /* Position on the left */
+    left: 10px; 
 }
 
 /* Right Arrow Position */
 .right-btn {
-    right: 10px; /* Position on the right */
+    right: 10px; 
 }
 
 /* Hover Effect for Arrows */
 .carousel-btn:hover {
-    background-color: #0055a5; /* Darker blue on hover */
+    background-color: #0055a5; 
 }
 
 /* Box7 Styling */
 .box7 {
-    display: flex; /* Enables flexbox for alignment */
-    justify-content: center; /* Center-align content horizontally */
-    align-items: center; /* Center-align content vertically */
-    background-color: #f9f9f9; /* Light gray background */
-    padding: 10px; /* Add padding around the box */
-    border: 1px solid #ddd; /* Optional: Light border for separation */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    border-radius: 5px; /* Optional: Rounded corners */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #f9f9f9; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; 
 }
 
 /* User Panel Styling */
 .user-panel {
     display: flex;
-    align-items: center; /* Center-align content vertically */
-    gap: 10px; /* Space between elements */
+    align-items: center; 
+    gap: 10px; 
     font-family: Arial, sans-serif;
     font-size: 14px;
-    color: #003366; /* Blue text color */
-    text-align: center; /* Center-align text */
+    color: #003366;
+    text-align: center;
 }
 
 /* KGS Styling */
 .user-panel .kgs {
     font-weight: bold;
-    color: #003366; /* Blue color */
-    font-size: 16px; /* Slightly larger font */
+    color: #003366;
+    font-size: 16px; 
 }
 
 /* Icons */
 .user-panel .icon-key,
 .user-panel .icon-user {
-    font-size: 18px; /* Adjust size of icons */
-    color: #003366; /* Blue color for icons */
+    font-size: 18px; 
+    color: #003366; 
 }
 
 /* Links (Login and Register) */
 .user-panel .login,
 .user-panel .register {
-    text-decoration: none; /* Remove underline */
-    color: #003366; /* Blue text */
-    font-weight: bold; /* Make the text bold */
-    border-bottom: 1px solid #003366; /* Underline effect */
+    text-decoration: none; 
+    color: #003366; 
+    font-weight: bold; 
+    border-bottom: 1px solid #003366; 
     transition: color 0.3s ease, border-color 0.3s ease; /* Smooth hover transition */
 }
 
 .user-panel .login:hover,
 .user-panel .register:hover {
-    color: #0055a5; /* Darker blue on hover */
+    color: #0055a5; 
     border-color: #0055a5; /* Change underline color on hover */
 }
 
 /* Divider Styling */
 .user-panel .divider {
-    font-size: 14px; /* Same size as the text */
-    color: #ccc; /* Light gray divider */
-    margin: 0 5px; /* Add spacing around the divider */
+    font-size: 14px; 
+    color: #ccc; 
+    margin: 0 5px; 
 }
 
 /* BOX 8 */
@@ -479,12 +479,12 @@ ul li {
 .address {
     color: red;
     max-width: 50%;
-    text-align: center; /* Centers the text horizontally */
-    display: flex; /* Enables flexbox for vertical alignment */
-    flex-direction: column; /* Ensures text stacks vertically */        
-    justify-content: center; /* Centers content vertically */
-    align-items: center; /* Aligns content horizontally */
-    width: 100%; /* Ensure it spans the entire available width */
+    text-align: center; 
+    display: flex; 
+    flex-direction: column;     
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
 }
 
 .address .location {
@@ -550,118 +550,118 @@ ul li {
 
 /* Address Section */
 .address {
-    color: #003366; /* Blue text color */
-    flex: 2; /* Allocate more space for address */
-    text-align: left; /* Align text to the left */
-    display: flex; /* Enables flexbox */
-    flex-direction: column; /* Stack text vertically */
-    gap: 10px; /* Add spacing between lines */
+    color: #003366; 
+    flex: 2; 
+    text-align: left;
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px;
 }
 
 .address .location {
-    text-decoration: none; /* Remove underline */
-    color: red; /* Red color for the map link */
-    font-size: 18px; /* Larger font size */
+    text-decoration: none; 
+    color: red; 
+    font-size: 18px; 
     font-weight: bold;
 }
 
 .address .location:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
 }
 
 .address .schedule {
-    color: #333; /* Dark gray for schedule text */
-    font-size: 14px; /* Smaller font for schedule */
+    color: #333; 
+    font-size: 14px; 
 }
 
 .address .schedule span {
-    color: red; /* Red color for highlighted times */
+    color: red; 
     font-weight: bold;
 }
 
 /* Phone Numbers Section */
 .phone-numbers {
-    display: flex; /* Enables flexbox for layout */
-    flex: 1; /* Allocate less space for phone numbers */
-    flex-direction: column; /* Stack phone rows vertically */
-    gap: 10px; /* Space between rows */
-    align-items: flex-start; /* Align to the left */
-    text-align: left; /* Left-align text */
+    display: flex; 
+    flex: 1; 
+    flex-direction: column; 
+    gap: 10px; 
+    align-items: flex-start; 
+    text-align: left; 
 }
 
 .phone-row {
-    display: flex; /* Align prefix, number, and icon horizontally */
-    align-items: center; /* Center-align elements vertically */
-    gap: 5px; /* Space between elements */
+    display: flex; 
+    align-items: center; 
+    gap: 5px; 
 }
 
 .phone-row .prefix {
-    color: gray; /* Gray color for prefix */
-    font-size: 14px; /* Smaller font size */
+    color: gray; 
+    font-size: 14px;
 }
 
 .phone-row .number {
-    color: black; /* Black color for main numbers */
-    font-size: 20px; /* Larger font size for numbers */
+    color: black; 
+    font-size: 20px; 
     font-weight: bold;
 }
 
 .phone-row .icon {
-    color: #ff69b4; /* Pink for icons */
-    font-size: 18px; /* Adjust icon size */
-    margin-right: 5px; /* Space before the icon */
+    color: #ff69b4; 
+    font-size: 18px;
+    margin-right: 5px;
 }
 
 /* Box9 Styling */
 .box9 {
-    display: flex; /* Flexbox for layout */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center items vertically */
-    align-items: flex-start; /* Align items to the left */
-    padding: 20px; /* Add padding inside the box */
-    background-color: #ffffff; /* White background */
-    border: 1px solid #ddd; /* Light border for structure */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+    padding: 20px;
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
     border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     gap: 15px; /* Add space between the pickup and favorites sections */
 }
 
 /* Pickup and Favorites Container */
 .pickup-favorites {
-    display: flex; /* Flexbox for layout */
-    flex-direction: column; /* Stack items vertically */
-    gap: 15px; /* Add spacing between items */
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
 }
 
 /* Individual Items */
 .pickup-item,
 .favorite-item {
-    display: flex; /* Flexbox for alignment */
-    align-items: center; /* Align icon and text vertically */
+    display: flex; 
+    align-items: center; 
     gap: 10px; /* Add space between the icon and text */
-    font-family: Arial, sans-serif; /* Consistent font */
-    font-size: 20px; /* Standard font size */
-    font-weight: bold; /* Make text bold */
-    text-transform: capitalize; /* Capitalize text */
+    font-family: Arial, sans-serif; 
+    font-size: 20px;
+    font-weight: bold; 
+    text-transform: capitalize; 
 }
 
 /* Icons */
 .pickup-item .icon,
 .favorite-item .icon {
-    font-size: 20px; /* Adjust size of the icons */
-    color: #000000; /* Black icons for uniformity */
+    font-size: 20px; 
+    color: #000000; 
 }
 
 /* Links */
 .link {
-    text-decoration: none; /* Remove underline */
-    color: red; /* Red text color for links */
-    font-weight: bold; /* Bold text */
-    border-bottom: 1px solid red; /* Adds underline effect */
+    text-decoration: none;
+    color: red;
+    font-weight: bold; 
+    border-bottom: 1px solid red; 
 }
 
 .link:hover {
-    text-decoration: underline; /* Underline on hover for interactivity */
+    text-decoration: underline;
 }
 
 .box1 { grid-area: menu; }
@@ -722,13 +722,13 @@ ul li {
     .menu-items {
         display: none; /* Hidden by default in mobile view */
         position: absolute; /* Position menu below hamburger icon */
-        background-color: #003366; /* Blue background */
+        background-color: #003366; 
         color: white;
         top: 50px;
         right: 0;
         width: 200px;
         border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
         padding: 10px; /* Add padding for dropdown items */
     }
 
@@ -785,15 +785,15 @@ ul li {
     }
 
     .tab {
-        width: 90%; /* Reduce tab width */
-        text-align: center; /* Center text inside tabs */
+        width: 90%; 
+        text-align: center; 
     }
 
     /* Box6 (Carousel) */
     .carousel {
-        flex-wrap: wrap; /* Allow multiple rows of product cards */
-        justify-content: center; /* Center-align product cards */
-        gap: 15px; /* Add spacing between rows */
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 15px; 
     }
 
     .product-card {
@@ -807,10 +807,10 @@ ul li {
 
     /* Box7 (User Panel) */
     .box7 {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center-align items */
-        text-align: center; /* Center-align text */
-        gap: 10px; /* Add spacing between elements */
+        flex-direction: column; 
+        align-items: center;
+        text-align: center; 
+        gap: 10px; 
     }
 
     .user-panel .divider {
@@ -819,16 +819,16 @@ ul li {
 
     /* Box8 (Contact Info) */
     .box8 {
-        flex-direction: column; /* Stack address and phone numbers */
-        align-items: center; /* Center-align content */
-        text-align: center; /* Center-align text */
-        gap: 20px; /* Add spacing between sections */
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        gap: 20px; 
     }
 
     .address,
     .phone-numbers {
-        align-items: center; /* Center-align content */
-        text-align: center; /* Center-align text */
+        align-items: center;
+        text-align: center; 
     }
 
     .contact-info::after {
@@ -837,24 +837,24 @@ ul li {
 
     /* Box9 (Pickup and Favorites) */
     .box9 {
-        align-items: center; /* Center-align content */
-        text-align: center; /* Center-align text */
-        padding: 15px; /* Reduce padding for smaller screens */
-        gap: 20px; /* Adjust spacing between sections */
+        align-items: center; 
+        text-align: center; 
+        padding: 15px; 
+        gap: 20px; 
     }
 
     .pickup-item,
     .favorite-item {
-        justify-content: center; /* Center-align icons and text */
+        justify-content: center;
     }
 
     .link {
-        font-size: 14px; /* Slightly smaller text size for links */
-        border-bottom: 1px solid red; /* Keep the underline effect */
+        font-size: 14px;
+        border-bottom: 1px solid red; 
     }
 
     .pickup-item .icon,
     .favorite-item .icon {
-        font-size: 18px; /* Slightly smaller icon size */
+        font-size: 18px; 
     }
 }
