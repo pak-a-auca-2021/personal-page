@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: none;
+    background-repeat: no-repeat;
+    max-width: 1143px;
+    min-height: 1583px;
+    font-size: 2rem;
+    opacity: 0.5;
+    color: blue;
+}
+
+.container > * {
+    border: 2px dashed blue;
+}
+
+.menu-items {
+    display: block; /* Always show menu items */
+    position: static; /* Keep menu in normal flow */
+    background: none; /* No background needed for desktop */
+    box-shadow: none; /* Remove shadow */
+    width: auto; /* Adjust width to fit content */
+    padding: 0; /* Remove padding for normal desktop layout */
+}
+
+.hamburger-icon {
+    display: none; /* Hide hamburger icon in desktop view */
+}
+
+
+ul {
+    font-family: 'Arial', sans-serif; 
+    font-size: 12px;
+    font-weight: bold;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+ul li {
+    padding: 10px;
+    flex: 1 1 auto; 
+    text-align: center; 
+    border-bottom: 1px solid #cccccc; 
+}
+
+/* MENU BOX 1 */
+.about-company {
+    flex-basis: 163px;
+}
+.contacts {
+    flex-basis: 111px;
+}
+.payment {
+    flex-basis: 109px;
+}
+.delivery {
+    flex-basis: 105px;
+}
+.orgs {
+    flex-basis: 182px;
+}
+.goods {
+    flex-basis: 8px;
+}
+.num {
+    flex-basis: 10px;
+}
+
+/* LOGO BOX2 */
+.logo-image {
+    max-width: 100%; /* Ensures the image scales proportionally */
+    height: auto;    /* Keeps the aspect ratio */
+    width: 225px;    /* You can adjust this value */
+    margin: 0 auto;  /* Center the image */
+    display: block;  /* Ensures proper centering */
+}
+
+/* Box3 Styling */
+.box3 {
+    display: flex; /* Enable flexbox for horizontal layout */
+    justify-content: space-between; /* Spread elements across the box */
+    align-items: center; /* Vertically center the elements */
+    padding: 10px 20px; /* Add padding around the content */
+    background-color: #eef2f7; /* Light gray background */
+    border: 1px solid #ddd; /* Optional: Border for separation */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Catalog Section */
+.catalog {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+.catalog-icon {
+    font-size: 20px; /* Icon size */
+    color: white;
+    background-color: #003366; /* Blue background */
+    padding: 5px;
+    border-radius: 3px; /* Rounded corners */
+}
+
+.catalog-text {
+    color: white;
+    font-weight: bold;
+    background-color: #003366;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* Search Section */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between input, dropdown, and button */
+    flex-grow: 1; /* Ensures the search bar stretches in the middle */
+    margin: 0 20px; /* Adds space between the catalog and shopping cart */
+}
+
+.search-input {
+    flex-grow: 1; /* Input field takes the remaining space */
+    padding: 5px;
+    border: 1px solid #003366;
+    border-radius: 3px;
+}
+
+.search-category {
+    padding: 5px;
+    border: 1px solid #003366;
+    border-radius: 3px;
+}
+
+.search-button {
+    padding: 5px 15px;
+    background-color: #003366; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Shopping Cart Section */
+.shopping-cart {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and details */
+}
+
+.cart-icon {
+    font-size: 25px; /* Icon size */
+    color: red;
+}
+
+.cart-details {
+    display: flex;
+    flex-direction: column; /* Stack title and quantity */
+    align-items: flex-start;
+    color: red;
+}
+
+.cart-title {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid red; /* Underline for title */
+}
+
+.cart-quantity {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* HERO BOX4 */
+.box4 {
+    display: flex; /* Enable flexbox for alignment */
+    justify-content: center; /* Horizontally center the image */
+    align-items: center; /* Vertically center the image */
+    padding: 10px; /* Optional: Add some padding inside the box */
+    background-color: #f9f9f9; /* Optional: Light background for better visibility */
+}
+
+.hero-image {
+    max-width: 100%; /* Ensures the image scales proportionally */
+    height: auto;    /* Keeps the aspect ratio */
+    width: 90%;    
+    margin: 0 auto;  /* Center the image */
+    display: block;  /* Ensures proper centering */
+}
+
+/* Box5 Styling */
+.box5 {
+    display: flex; /* Align tabs horizontally */
+    gap: 10px; /* Space between tabs */
+    padding: 10px; /* Inner padding */
+    background-color: #f9f9f9; /* Light background */
+    align-items: center; /* Center tabs vertically */
+}
+
+/* General Tab Styling */
+.tab {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative; /* For pseudo-elements */
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%); /* Angled effect */
+    background-color: #e5e5e5; /* Default background */
+    color: #003366; /* Default text color */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Latest Orders Tab (Active State) */
+.latest-orders {
+    background-color: #003366; /* Blue background for active tab */
+    color: white; /* White text */
+}
+
+.latest-orders span {
+    color: white; /* White text for the active tab */
+}
+
+/* Items on Sale Tab */
+.items-sale {
+    background-color: #e5e5e5; /* Gray background */
+    color: #003366; /* Blue text */
+}
+
+.items-sale .tab-link {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+.items-sale .tab-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Box6 Styling */
+.box6 {
+    display: flex; /* Align elements horizontally */
+    align-items: center; /* Vertically align arrows with product cards */
+    justify-content: center; /* Center content */
+    gap: 10px; /* Space between arrows and carousel */
+    position: relative; /* For positioning arrows */
+    background-color: #f9f9f9; /* Optional: Light background */
+    padding: 10px; /* Padding around the box */
+}
+
+/* Carousel Container */
+.carousel {
+    display: flex; /* Horizontal layout for product cards */
+    gap: 20px; /* Space between product cards */
+    overflow: hidden; /* Hide overflow for carousel scrolling */
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%; /* Width of the carousel area */
+}
+
+/* Product Card Styling */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border: 2px solid #003366; /* Blue border */
+    padding: 10px;
+    background-color: #fff;
+    width: 190px; /* Fixed width */
+    height: 250px; /* Increased height to accommodate content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styling */
+.product-card img {
+    max-width: 100%; /* Fit the card width */
+    max-height: 120px; /* Maintain consistent height for images */
+    object-fit: contain; /* Prevent distortion */
+    margin-bottom: 10px; /* Add spacing below the image */
+}
+
+/* Title Styling */
+.product-card h3 {
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Slightly smaller font */
+    color: #003366; /* Blue color for titles */
+    margin: 10px 0;
+    line-height: 1.4; /* Better readability */
+    overflow: hidden; /* Prevent text from overflowing */
+    text-overflow: ellipsis; /* Add ellipsis for long text */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit title to 2 lines */
+    -webkit-box-orient: vertical;
+}
+
+/* Price Styling */
+.product-card p {
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Larger font for price */
+    color: black;
+    font-weight: bold;
+    margin-top: auto; /* Push price to the bottom of the card */
+    margin-bottom: 10px; /* Add spacing below the price */
+}
+
+/* Arrows Styling */
+.carousel-btn {
+    background-color: #003366; /* Blue background */
+    color: white; /* White arrow color */
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-btn:hover {
+    background-color: #0055a5; /* Darker blue on hover */
+}
+
+.left-btn {
+    position: absolute;
+    left: 10px; /* Position relative to the box */
+    z-index: 1;
+}
+
+.right-btn {
+    position: absolute;
+    right: 10px; /* Position relative to the box */
+    z-index: 1;
+}
+
+/* BOX 7 */
+/* User Panel Styles */
+.box7 {
+    background-color: #f0f0f0; /* Light gray background */
+    display: flex; /* Enables flexbox for centering */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100%; /* Ensures the box takes its allocated height */
+    padding: 10px; /* Optional: Adds some padding */
+}
+
+/* User Panel Styling */
+.user-panel {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between elements */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: black;
+    text-align: center; /* Centers text within each element */
+}
+
+/* Individual Elements */
+.user-panel .kgs {
+    font-weight: bold;
+}
+
+.user-panel .icon-key,
+.user-panel .icon-user {
+    font-size: 16px;
+}
+
+.user-panel .login,
+.user-panel .register {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-bottom: 1px solid black; /* Underline effect */
+}
+
+.user-panel .divider {
+    font-size: 14px;
+    color: #ccc; /* Light gray divider */
+    margin: 0 5px; /* Adds spacing around the divider */
+}
+
+/* BOX 8 */
+/* General container styling */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Address Section */
+.address {
+    color: red;
+    max-width: 50%;
+    text-align: center; /* Centers the text horizontally */
+    display: flex; /* Enables flexbox for vertical alignment */
+    flex-direction: column; /* Ensures text stacks vertically */        
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Aligns content horizontally */
+    width: 100%; /* Ensure it spans the entire available width */
+}
+
+.address .location {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+.address .schedule {
+    margin-top: 5px;
+    color: red;
+    font-weight: normal;
+}
+
+.address .schedule span {
+    color: red;
+    font-weight: bold;
+}
+
+/* Phone Numbers Section */
+.phone-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.phone-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.phone-row .prefix {
+    color: gray;
+    font-weight: normal;
+}
+
+.phone-row .number {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.phone-row .icon {
+    color: pink;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Divider between sections */
+.contact-info::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #ddd;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+/* Box9 Styling */
+.box9 {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: flex-start; /* Align items to the left */
+    background-color: #ffffff; /* Optional: White background */
+    padding: 10px; /* Adds spacing inside the box */
+}
+
+/* Pickup and Favorites Container */
+.pickup-favorites {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    gap: 10px; /* Adds space between the items */
+}
+
+/* Individual Items */
+.pickup-item,
+.favorite-item {
+    display: flex;
+    align-items: center; /* Align icon and text on the same line */
+    gap: 10px; /* Space between the icon and the text */
+    font-size: 20px;
+}
+
+/* Icons */
+.icon {
+    font-size: 20px; /* Adjust size of the icons */
+    color: black; /* Optional: Change color if needed */
+}
+
+/* Links */
+.link {
+    text-decoration: none; /* Remove default underline */
+    color: red; /* Red color for the text */
+    font-weight: bold; /* Make the text bold */
+    border-bottom: 1px solid red; /* Adds underline effect */
+}
+
+.link:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+
+.container {
+    display: grid;
+    grid-template-rows: minmax(37px, auto) minmax(70px, auto) minmax(96px, auto) minmax(327px, auto) minmax(44px, auto) minmax(315px, auto);
+    grid-template-columns:  minmax(225px, auto) minmax(657px, auto) minmax(360px, auto);
+    grid-template-areas:
+        "one one seven"
+        "two eight nine"
+        "three three three"
+        "four four four"
+        "five five five"
+        "six six six";
+}
+
+.box1 { grid-area: one; }
+.box2 { grid-area: two; }
+.box3 { grid-area: three; }
+.box4 { grid-area: four; }
+.box5 { grid-area: five; }
+.box6 { grid-area: six; }
+.box7 { grid-area: seven; }
+.box8 { grid-area: eight; }
+.box9 { grid-area: nine; }
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+
+        grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight";
+    }
+}

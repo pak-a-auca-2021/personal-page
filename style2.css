@@ -1,0 +1,860 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body > img:nth-of-type(1) {
+    display: none;
+}
+   
+body {
+    background-image: none;
+    background-repeat: no-repeat;
+    max-width: 1143px;
+    min-height: 1583px;
+    font-size: 2rem;
+    opacity: 1;
+    color: blue;
+}
+
+.container > * {
+    border: 2px dashed blue;
+}
+
+ul {
+    font-family: 'Arial', sans-serif; 
+    font-size: 14px;
+    font-weight: bold;
+    list-style-type: none;
+    padding: 5px;
+    padding-top: 10px;
+    margin: 0;
+    display: flex;
+    background-color: #ffffff;
+    color: #000000;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+ul li {
+    padding: 15px;
+    border-bottom: 1px solid #000000;
+    width: 100%;
+    text-align: center;
+}
+
+/* Hamburger Icon Styling */
+.hamburger-icon {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #003366; /* Blue color for the icon */
+    position: fixed; /* Fixed at the top-right corner */
+    top: 10px;
+    right: 10px;
+    z-index: 1000; /* Ensure it’s above other elements */
+}
+
+/* Box1 Menu Styling */
+.menu-items {
+    display: none; /* Hidden by default */
+    background-color: #003366; /* Blue background for the menu */
+    color: white;
+    position: absolute; /* Positioned below the hamburger icon */
+    top: 50px;
+    right: 0;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    z-index: 999; /* Ensure it’s above other content */
+}
+
+/*BOX 1 Menu Items List */
+.menu-items ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.menu-items ul li {
+    margin: 10px 0;
+}
+
+.menu-items ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu-items ul li a:hover {
+    background-color: #0055a5; /* Darker blue on hover */
+}
+/* BOX 2 */
+.logo-image {
+    max-width: 100%; /* Ensures the image scales proportionally */
+    height: auto;    /* Keeps the aspect ratio */
+    width: 225px;    /* You can adjust this value */
+    margin: 0 auto;  /* Center the image */
+    display: block;  /* Ensures proper centering */
+}
+
+/* Box3 Styling */
+.box3 {
+    display: flex; /* Enables horizontal layout */
+    flex-wrap: wrap; /* Allows elements to wrap on smaller screens */
+    gap: 20px; /* Space between sections */
+    justify-content: space-between; /* Space out the sections */
+    align-items: center; /* Align vertically */
+    padding: 10px 20px; /* Padding inside the box */
+    background-color: #eef2f7; /* Light gray background */
+    border: 1px solid #ddd; /* Optional: Border for separation */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Catalog Section */
+.catalog {
+    display: flex; /* Align icon and text horizontally */
+    align-items: center; /* Center-align content vertically */
+    gap: 10px; /* Space between icon and text */
+    background-color: #003366; /* Blue background */
+    padding: 10px; /* Padding inside the section */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* White text */
+    font-weight: bold;
+}
+
+.catalog-icon {
+    font-size: 20px; /* Icon size */
+    color: white;
+}
+
+.catalog-text {
+    color: white;
+    font-weight: bold;
+    font-size: 14px; /* Adjust font size */
+}
+
+/* Search Bar Section */
+.search-bar {
+    display: flex; /* Align search elements horizontally */
+    flex-wrap: wrap; /* Wrap items for smaller screens */
+    gap: 10px; /* Space between input, dropdown, and button */
+    flex-grow: 1; /* Ensure the search bar stretches */
+    margin: 0 20px; /* Adds space between the catalog and shopping cart */
+}
+
+.search-input {
+    flex-grow: 1; /* Input field takes the remaining space */
+    padding: 10px;
+    border: 1px solid #003366; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px;
+}
+
+.search-category {
+    padding: 10px;
+    border: 1px solid #003366; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px;
+    background-color: #fff; /* White background */
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #003366; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover Effect for Search Button */
+.search-button:hover {
+    background-color: #0055a5; /* Darker blue */
+}
+
+/* Shopping Cart Section */
+.shopping-cart {
+    display: flex; /* Align icon and details horizontally */
+    align-items: center; /* Center vertically */
+    gap: 10px; /* Space between icon and text */
+    background-color: #fff; /* White background */
+    padding: 10px; /* Padding inside the section */
+    border: 1px solid #003366; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.cart-icon {
+    font-size: 25px; /* Icon size */
+    color: #003366; /* Blue color for the icon */
+}
+
+.cart-details {
+    display: flex;
+    flex-direction: column; /* Stack title and quantity vertically */
+    align-items: flex-start; /* Align text to the left */
+    color: #003366; /* Blue text color */
+}
+
+.cart-title {
+    font-size: 14px; /* Smaller font for the title */
+    font-weight: bold;
+    border-bottom: 1px solid #003366; /* Underline effect */
+}
+
+.cart-quantity {
+    font-size: 12px; /* Smaller font for the quantity */
+    font-weight: normal;
+}
+
+/* HERO BOX4 */
+.box4 {
+    display: flex; /* Enable flexbox for alignment */
+    justify-content: center; /* Horizontally center the image */
+    align-items: center; /* Vertically center the image */
+    padding: 10px; /* Optional: Add some padding inside the box */
+    background-color: #ffffff; /* Optional: Light background for better visibility */
+}
+
+.hero-image {
+    max-width: 100%; /* Ensures the image scales proportionally */
+    height: auto;    /* Keeps the aspect ratio */
+    width: 100%;    
+    margin: 0 auto;  /* Center the image */
+    display: block;  /* Ensures proper centering */
+}
+
+/* Box5 Styling */
+.box5 {
+    display: flex; /* Align tabs horizontally */
+    gap: 10px; /* Space between tabs */
+    padding: 10px; /* Inner padding */
+    background-color: #f9f9f9; /* Light gray background */
+    align-items: center; /* Center tabs vertically */
+    justify-content: center; /* Center tabs horizontally */
+}
+
+/* General Tab Styling */
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px; /* Space inside tabs */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase; /* All caps for text */
+    font-weight: bold;
+    position: relative; /* For pseudo-elements or positioning */
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%); /* Angled effect */
+    background-color: #e5e5e5; /* Default background */
+    color: #003366; /* Default text color */
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Tabs */
+.tab:hover {
+    background-color: #003366; /* Darker blue on hover */
+    color: white; /* White text on hover */
+}
+
+/* Active Tab Styling */
+.latest-orders {
+    background-color: #003366; /* Blue background for active tab */
+    color: white; /* White text for active tab */
+}
+
+/* Items on Sale Tab */
+.items-sale {
+    background-color: #e5e5e5; /* Gray background */
+    color: #003366; /* Blue text */
+}
+
+/* Link Styling for Items on Sale */
+.items-sale .tab-link {
+    text-decoration: none; /* Remove underline */
+    color: #003366; /* Blue text color */
+    font-weight: bold; /* Bold text */
+}
+
+.items-sale .tab-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Box6 */
+.box6 {
+    display: flex;
+    flex-wrap: wrap; /* Wrap product cards onto new rows if needed */
+    gap: 20px; /* Space between product cards */
+    justify-content: center; /* Center all content */
+    padding: 20px; /* Padding around the box */
+    background-color: #f9f9f9; /* Light gray background */
+    position: relative; /* For positioning arrows */
+}
+
+/* Carousel Container Styling */
+.carousel {
+    display: flex; /* Horizontal layout for product cards */
+    flex-wrap: wrap; /* Allow wrapping onto multiple rows */
+    gap: 20px; /* Space between product cards */
+    justify-content: center; /* Center-align cards */
+    width: 100%; /* Occupy full width of the container */
+    margin: 0 auto; /* Center carousel content */
+}
+
+/* Product Card Styling */
+.product-card {
+    display: flex;
+    flex-direction: column; /* Vertical layout for cards */
+    align-items: center; /* Center-align card content */
+    justify-content: space-between; /* Space out content vertically */
+    text-align: center; /* Center text */
+    border: 2px solid #003366; /* Blue border */
+    padding: 10px;
+    background-color: #fff; /* White background */
+    width: calc(100% / 2 - 30px); /* Two cards per row */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in size */
+    transition: transform 0.3s ease; /* Hover effect */
+}
+
+/* Hover Effect for Product Card */
+.product-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Product Image Styling */
+.product-card img {
+    max-width: 100%; /* Fit within card width */
+    max-height: 120px; /* Consistent image height */
+    object-fit: contain; /* Prevent distortion */
+    margin-bottom: 10px; /* Space below image */
+}
+
+/* Product Title Styling */
+.product-card h3 {
+    font-family: Arial, sans-serif;
+    font-size: 14px; /* Adjusted font size */
+    color: #003366; /* Blue color for title */
+    margin: 10px 0;
+    line-height: 1.4; /* Better readability */
+    overflow: hidden; /* Prevent overflow */
+    text-overflow: ellipsis; /* Ellipsis for long text */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+}
+
+/* Product Price Styling */
+.product-card p {
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Larger font for price */
+    color: black; /* Black color for price */
+    font-weight: bold;
+    margin-top: auto; /* Push price to bottom */
+    margin-bottom: 10px; /* Space below price */
+}
+
+/* Navigation Arrows Styling */
+.carousel-btn {
+    background-color: #003366; /* Blue background */
+    color: white; /* White arrow color */
+    border: none;
+    border-radius: 50%; /* Circular button */
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    position: absolute;
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%); /* Adjust for button height */
+    z-index: 1000; /* Above other elements */
+}
+
+/* Left Arrow Position */
+.left-btn {
+    left: 10px; /* Position on the left */
+}
+
+/* Right Arrow Position */
+.right-btn {
+    right: 10px; /* Position on the right */
+}
+
+/* Hover Effect for Arrows */
+.carousel-btn:hover {
+    background-color: #0055a5; /* Darker blue on hover */
+}
+
+/* Box7 Styling */
+.box7 {
+    display: flex; /* Enables flexbox for alignment */
+    justify-content: center; /* Center-align content horizontally */
+    align-items: center; /* Center-align content vertically */
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 10px; /* Add padding around the box */
+    border: 1px solid #ddd; /* Optional: Light border for separation */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+/* User Panel Styling */
+.user-panel {
+    display: flex;
+    align-items: center; /* Center-align content vertically */
+    gap: 10px; /* Space between elements */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #003366; /* Blue text color */
+    text-align: center; /* Center-align text */
+}
+
+/* KGS Styling */
+.user-panel .kgs {
+    font-weight: bold;
+    color: #003366; /* Blue color */
+    font-size: 16px; /* Slightly larger font */
+}
+
+/* Icons */
+.user-panel .icon-key,
+.user-panel .icon-user {
+    font-size: 18px; /* Adjust size of icons */
+    color: #003366; /* Blue color for icons */
+}
+
+/* Links (Login and Register) */
+.user-panel .login,
+.user-panel .register {
+    text-decoration: none; /* Remove underline */
+    color: #003366; /* Blue text */
+    font-weight: bold; /* Make the text bold */
+    border-bottom: 1px solid #003366; /* Underline effect */
+    transition: color 0.3s ease, border-color 0.3s ease; /* Smooth hover transition */
+}
+
+.user-panel .login:hover,
+.user-panel .register:hover {
+    color: #0055a5; /* Darker blue on hover */
+    border-color: #0055a5; /* Change underline color on hover */
+}
+
+/* Divider Styling */
+.user-panel .divider {
+    font-size: 14px; /* Same size as the text */
+    color: #ccc; /* Light gray divider */
+    margin: 0 5px; /* Add spacing around the divider */
+}
+
+/* BOX 8 */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #facbe6;
+}
+
+/* Address Section */
+.address {
+    color: red;
+    max-width: 50%;
+    text-align: center; /* Centers the text horizontally */
+    display: flex; /* Enables flexbox for vertical alignment */
+    flex-direction: column; /* Ensures text stacks vertically */        
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Aligns content horizontally */
+    width: 100%; /* Ensure it spans the entire available width */
+}
+
+.address .location {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+.address .schedule {
+    margin-top: 5px;
+    color: red;
+    font-weight: normal;
+}
+
+.address .schedule span {
+    color: red;
+    font-weight: bold;
+}
+
+/* Phone Numbers Section */
+.phone-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.phone-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.phone-row .prefix {
+    color: gray;
+    font-weight: normal;
+}
+
+.phone-row .number {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.phone-row .icon {
+    color: pink;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Divider between sections */
+.contact-info::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #ddd;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+/* Address Section */
+.address {
+    color: #003366; /* Blue text color */
+    flex: 2; /* Allocate more space for address */
+    text-align: left; /* Align text to the left */
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stack text vertically */
+    gap: 10px; /* Add spacing between lines */
+}
+
+.address .location {
+    text-decoration: none; /* Remove underline */
+    color: red; /* Red color for the map link */
+    font-size: 18px; /* Larger font size */
+    font-weight: bold;
+}
+
+.address .location:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.address .schedule {
+    color: #333; /* Dark gray for schedule text */
+    font-size: 14px; /* Smaller font for schedule */
+}
+
+.address .schedule span {
+    color: red; /* Red color for highlighted times */
+    font-weight: bold;
+}
+
+/* Phone Numbers Section */
+.phone-numbers {
+    display: flex; /* Enables flexbox for layout */
+    flex: 1; /* Allocate less space for phone numbers */
+    flex-direction: column; /* Stack phone rows vertically */
+    gap: 10px; /* Space between rows */
+    align-items: flex-start; /* Align to the left */
+    text-align: left; /* Left-align text */
+}
+
+.phone-row {
+    display: flex; /* Align prefix, number, and icon horizontally */
+    align-items: center; /* Center-align elements vertically */
+    gap: 5px; /* Space between elements */
+}
+
+.phone-row .prefix {
+    color: gray; /* Gray color for prefix */
+    font-size: 14px; /* Smaller font size */
+}
+
+.phone-row .number {
+    color: black; /* Black color for main numbers */
+    font-size: 20px; /* Larger font size for numbers */
+    font-weight: bold;
+}
+
+.phone-row .icon {
+    color: #ff69b4; /* Pink for icons */
+    font-size: 18px; /* Adjust icon size */
+    margin-right: 5px; /* Space before the icon */
+}
+
+/* Box9 Styling */
+.box9 {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: flex-start; /* Align items to the left */
+    padding: 20px; /* Add padding inside the box */
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ddd; /* Light border for structure */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    gap: 15px; /* Add space between the pickup and favorites sections */
+}
+
+/* Pickup and Favorites Container */
+.pickup-favorites {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Add spacing between items */
+}
+
+/* Individual Items */
+.pickup-item,
+.favorite-item {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Align icon and text vertically */
+    gap: 10px; /* Add space between the icon and text */
+    font-family: Arial, sans-serif; /* Consistent font */
+    font-size: 20px; /* Standard font size */
+    font-weight: bold; /* Make text bold */
+    text-transform: capitalize; /* Capitalize text */
+}
+
+/* Icons */
+.pickup-item .icon,
+.favorite-item .icon {
+    font-size: 20px; /* Adjust size of the icons */
+    color: #000000; /* Black icons for uniformity */
+}
+
+/* Links */
+.link {
+    text-decoration: none; /* Remove underline */
+    color: red; /* Red text color for links */
+    font-weight: bold; /* Bold text */
+    border-bottom: 1px solid red; /* Adds underline effect */
+}
+
+.link:hover {
+    text-decoration: underline; /* Underline on hover for interactivity */
+}
+
+.box1 { grid-area: menu; }
+.box2 { grid-area: logo; }
+.box3 { grid-area: catalog-search; }
+.box4 { grid-area: hero; }
+.box5 { grid-area: latest-orders; }
+.box6 { grid-area: carousel; }
+.box7 { grid-area: login; }
+.box8 { grid-area: contact-info; }
+.box9 { grid-area: favs; }
+
+.container {
+    display: grid;
+    /* grid-template-rows: minmax(37px, auto) minmax(104px, auto) minmax(96px, auto) minmax(310px, auto) minmax(44px, auto) minmax(315px, auto);
+    grid-template-columns:  minmax(225px, 1fr) minmax(657px, 2fr) minmax(360px, 1fr); */
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: minmax(280px, auto) minmax(860px, auto);
+    grid-template-areas:
+        "logo login"
+        "menu hero"
+        "latest-orders catalog-search"
+        "favs carousel"
+        "contact-info contact-info"
+}
+
+@media (min-width: 501px) {
+    .menu-items {
+        display: block; /* Always show the menu in desktop view */
+        position: static; /* Menu stays in the normal flow */
+        background: none;
+        box-shadow: none;
+        width: auto;
+        padding: 0;
+    }
+
+    .hamburger-icon {
+        display: none; /* Hide the hamburger icon in desktop view */
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+
+        grid-template-areas:
+        "logo"
+        "login"
+        "menu"
+        "hero"
+        "catalog-search"
+        "latest-orders"
+        "carousel"
+        "favs"
+        "contact-info";
+    }
+
+    .menu-items {
+        display: none; /* Hidden by default in mobile view */
+        position: absolute; /* Position menu below hamburger icon */
+        background-color: #003366; /* Blue background */
+        color: white;
+        top: 50px;
+        right: 0;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        padding: 10px; /* Add padding for dropdown items */
+    }
+
+    .menu-items.open {
+        display: block; /* Show menu when toggled */
+    }
+
+    .hamburger-icon {
+        display: block; /* Show hamburger icon in mobile view */
+    }
+
+    /* Box2 (Logo) */
+    .logo-image {
+        max-width: 100%; /* Scale logo for smaller screens */
+        height: auto;
+    }
+
+    /* Box3 (Catalog, Search, and Cart) */
+    .box3 {
+        flex-direction: column; /* Stack catalog, search, and cart vertically */
+        align-items: center; /* Center content */
+        text-align: center;
+        gap: 15px; /* Add spacing between elements */
+    }
+
+    .catalog {
+        flex-direction: row; /* Align icon and text horizontally */
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .search-bar {
+        flex-direction: column; /* Stack input, dropdown, and button vertically */
+        gap: 10px; /* Add spacing between elements */
+        width: 100%;
+    }
+
+    .shopping-cart {
+        justify-content: center; /* Center cart details */
+    }
+
+    /* Box4 (Hero) */
+    .hero-image {
+        width: 100%; /* Full width for smaller screens */
+        height: auto;
+        margin: 0;
+    }
+
+    /* Box5 (Latest Orders Tabs) */
+    .box5 {
+        flex-direction: column; /* Stack tabs vertically */
+        gap: 10px; /* Add spacing between tabs */
+        align-items: center; /* Center-align tabs */
+    }
+
+    .tab {
+        width: 90%; /* Reduce tab width */
+        text-align: center; /* Center text inside tabs */
+    }
+
+    /* Box6 (Carousel) */
+    .carousel {
+        flex-wrap: wrap; /* Allow multiple rows of product cards */
+        justify-content: center; /* Center-align product cards */
+        gap: 15px; /* Add spacing between rows */
+    }
+
+    .product-card {
+        width: 45%; /* Reduce width of product cards for smaller screens */
+        height: auto;
+    }
+
+    .carousel-btn {
+        display: none; /* Hide carousel arrows in mobile view */
+    }
+
+    /* Box7 (User Panel) */
+    .box7 {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align items */
+        text-align: center; /* Center-align text */
+        gap: 10px; /* Add spacing between elements */
+    }
+
+    .user-panel .divider {
+        display: none; /* Remove divider for better spacing */
+    }
+
+    /* Box8 (Contact Info) */
+    .box8 {
+        flex-direction: column; /* Stack address and phone numbers */
+        align-items: center; /* Center-align content */
+        text-align: center; /* Center-align text */
+        gap: 20px; /* Add spacing between sections */
+    }
+
+    .address,
+    .phone-numbers {
+        align-items: center; /* Center-align content */
+        text-align: center; /* Center-align text */
+    }
+
+    .contact-info::after {
+        display: none; /* Hide divider on smaller screens */
+    }
+
+    /* Box9 (Pickup and Favorites) */
+    .box9 {
+        align-items: center; /* Center-align content */
+        text-align: center; /* Center-align text */
+        padding: 15px; /* Reduce padding for smaller screens */
+        gap: 20px; /* Adjust spacing between sections */
+    }
+
+    .pickup-item,
+    .favorite-item {
+        justify-content: center; /* Center-align icons and text */
+    }
+
+    .link {
+        font-size: 14px; /* Slightly smaller text size for links */
+        border-bottom: 1px solid red; /* Keep the underline effect */
+    }
+
+    .pickup-item .icon,
+    .favorite-item .icon {
+        font-size: 18px; /* Slightly smaller icon size */
+    }
+}

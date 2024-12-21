@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <link rel="stylesheet" href="style1.css" class="style">
+</head>
+<body>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+
+    <!-- <img src='https://cdn.imgchest.com/files/pyvdcd2n9yk.png' style='position: absolute; top:0; left:0;z-index:-1'> -->
+
+    <div class="container">
+        
+        <div class="box1">
+            <button class="hamburger-icon" onclick="toggleMenu()">☰</button>
+            <div class="menu-items" id="menu-items">
+                <ul>
+                    <li class="menu-item">About company</li>
+                    <li class="menu-item">Contacts</li>
+                    <li class="menu-item">Payment</li>
+                    <li class="menu-item">Delivery</li>
+                    <li class="menu-item">Organizations</li>
+                    <li class="menu-item">Goods: +1,000,000</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box2">
+            <img src="https://i.postimg.cc/9XZjZg45/Screenshot-2024-12-21-184519.png" alt="Logo"  class="logo-image">
+        </div>
+
+        <div class="box3">
+            <!-- Catalog Section -->
+            <div class="catalog">
+                <div class="catalog-icon">☰</div>
+                <span class="catalog-text">CATALOG</span>
+            </div>
+        
+            <!-- Search Section -->
+            <div class="search-bar">
+                <input type="text" placeholder="product search" class="search-input">
+                <select class="search-category">
+                    <option>All</option>
+                    <option>Category 1</option>
+                    <option>Category 2</option>
+                </select>
+                <button class="search-button">🔍 Search</button>
+            </div>
+        
+            <!-- Shopping Cart Section -->
+            <div class="shopping-cart">
+                <div class="cart-icon">🛒</div>
+                <div class="cart-details">
+                    <span class="cart-title">Shopping cart Qty</span>
+                    <span class="cart-quantity">: 0</span>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="box4">
+            <img src="https://i.postimg.cc/kGJzqFW1/Screenshot-2024-12-21-202747.png" alt="Hero"  class="hero-image">
+        </div>
+
+        <div class="box5">
+            <div class="box5">
+                <div class="tab latest-orders active">
+                    <span>Latest Orders</span>
+                </div>
+                <div class="tab items-sale">
+                    <a href="#" class="tab-link">Items on sale</a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="box6">
+            <!-- Left Arrow -->
+            <button class="carousel-btn left-btn">❮</button>
+        
+            <!-- Product Cards -->
+            <div class="carousel">
+                <div class="product-card">
+                    <img src="https://i.postimg.cc/c4b37xk6/Screenshot-2024-12-21-204943.png" alt="Exercise bike">
+                    <h3>Exercise bike DFC B504RWO magnetic</h3>
+                    <p>27340s.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://i.postimg.cc/CMvnYMgJ/Screenshot-2024-12-21-205037.png" alt="Convector">
+                    <h3>Convector Ballu Ettore BEC/ETMR-1000, up to 15 m2</h3>
+                    <p>4800s.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://i.postimg.cc/6pCQ7tDk/Screenshot-2024-12-21-205341.png" alt="Electric stove">
+                    <h3>Electric stove Gefest EP ND 6140-03</h3>
+                    <p>$21,090</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://i.postimg.cc/d3zq1xnQ/Screenshot-2024-12-21-205536.png" alt="Notebook">
+                    <h3>Notebook Lenovo IdeaPad L340-15API ATHLON 300U 2.4</h3>
+                    <p>32,890s.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://i.postimg.cc/cL7sxT3Z/Screenshot-2024-12-21-205641.png" alt="Washing machine">
+                    <h3>Washing machine Samsung WW60A4S00CE</h3>
+                    <p>30,070s.</p>
+                </div>
+            </div>
+        
+            <!-- Right Arrow -->
+            <button class="carousel-btn right-btn">❯</button>
+        </div>
+
+        <div class="box7">
+            <div class="user-panel">
+                <span class="kgs">KGS</span>
+                <span class="icon-key">🔑</span>
+                <a href="#" class="login">to come in</a>
+                <span class="divider">|</span>
+                <span class="icon-user">👤</span>
+                <a href="#" class="register">Register</a>
+            </div>
+        </div>
+
+        <div class="box8">
+            <div class="contact-info">
+                <div class="address">
+                    <a href="#" class="location">st. Mederova 8/2 - map</a>
+                    <p class="schedule">Schedule: Mon-Sat <span>9-18</span>, Sun <span>9-18</span></p>
+                </div>
+                <div class="phone-numbers">
+                    <div class="phone-row">
+                        <span class="prefix">0 777</span> <span class="number"><b>93 11 11</b></span>
+                    </div>
+                    <div class="phone-row">
+                        <span class="prefix">0 553</span> <span class="number"><b>93 11 11</b></span>
+                    </div>
+                </div>
+                <div class="phone-numbers">
+                    <div class="phone-row">
+                        <span class="icon">📣</span> <span class="prefix">0 500</span> <span class="number"><b>93 11 11</b></span>
+                    </div>
+                    <div class="phone-row">
+                        <span class="prefix">0 312</span> <span class="number"><b>98 67 60</b></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="box9">
+            <div class="pickup-favorites">
+                <div class="pickup-item">
+                    <span class="icon">🛒</span>
+                    <a href="#" class="link">Where to pick up the goods?</a>
+                </div>
+                <div class="favorite-item">
+                    <span class="icon">❤️</span>
+                    <a href="#" class="link">Favorites</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <script>
+        function switchStyle() {
+            let style = document.querySelector('.style');
+            if (style.getAttribute('href') == 'style1.css') {
+                style.setAttribute('href', 'style2.css');
+            } else {
+            style.setAttribute('href', 'style1.css');
+            }
+        }
+
+        function toggleMenu() {
+            const menu = document.getElementById('menu-items');
+            menu.classList.toggle('open'); /* Add/remove 'open' class to toggle visibility */
+        }
+    </script>
+        
+</body>
+</html>
